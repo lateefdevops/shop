@@ -3,3 +3,6 @@ def products():
 
 def wishlist():
     return ["shirt"]
+
+def search(term):
+    return [p for p in products() if term.lower() in p]
